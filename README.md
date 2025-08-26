@@ -1,39 +1,26 @@
-# Car_store
+Car_store
 
-Простой REST API для магазина машин на базе json-server.
+Simple REST API for a car shop powered by json-server.
 
-## Быстрый старт - Node
-- Установи зависимости
-```
+Quick start - Node
+
+Install deps
 npm install
-```
-- Запусти
-```
+Run
 npm start
-```
-Сервис поднимется на http://localhost:3001
-
-## Быстрый старт - Docker
-```
+The service will be available at http://localhost:3001
+Quick start - Docker
 docker build -t car_store .
 docker run -p 3001:3001 car_store
-```
-или
-```
+or
 docker compose up --build
-```
+Handy endpoints
 
-## Полезные эндпоинты
-- Healthcheck
-```
+Healthcheck
 GET /health
-```
-- Сброс к начальному состоянию
-```
+Reset to the initial state
 POST /reset
-```
-- Базовые ресурсы
-```
+Base resources
 GET    /cars
 POST   /cars
 GET    /cars/:id
@@ -48,26 +35,17 @@ GET    /brands/:id/cars
 GET    /users
 GET    /orders
 GET    /cars/:id/reviews
-```
-
-## Реляции и удобства
-- Вкладывать связанные сущности
-```
+Relations and conveniences:
+Expand related entities
 GET /cars?_expand=brand&_embed=reviews
-```
-- Поиск и фильтры
-```
+Search and filters
 GET /cars?q=tesla
 GET /cars?brandId=3&price_gte=30000&price_lte=40000
-```
-- Сортировка и пагинация
-```
+Sorting and pagination
 GET /cars?_sort=price&_order=asc&_page=1&_limit=10
-```
+Request examples
 
-## Примеры запросов
-- Создать машину
-```
+Create a car
 POST /cars
 Content-Type: application/json
 
@@ -83,15 +61,5 @@ Content-Type: application/json
   "images": ["https://placehold.co/600x400?text=Toyota+Camry"],
   "vin": "JTNB11HK7N3000001"
 }
-```
-- Получить с разворотом бренда и отзывами
-```
+Fetch with brand and reviews expanded
 GET /cars/1?_expand=brand&_embed=reviews
-```
-
-## Замечания
-- Поле price должно быть числом, id не передавай - json-server сгенерит сам.
-- Для полной чистки базы используй `npm run reset` или `POST /reset`.
-- Хранилище - обычный файл db.json - удобно для локальной разработки.
-
-Удачи и приятного тестирования.
