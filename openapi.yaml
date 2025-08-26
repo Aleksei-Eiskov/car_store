@@ -1,0 +1,61 @@
+openapi: 3.0.3
+info:
+  title: Car_store API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3001
+paths:
+  /cars:
+    get:
+      summary: List cars
+      parameters:
+        - in: query
+          name: _page
+          schema: {type: integer}
+        - in: query
+          name: _limit
+          schema: {type: integer}
+      responses:
+        "200":
+          description: OK
+    post:
+      summary: Create car
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Car'
+      responses:
+        "201":
+          description: Created
+  /cars/{id}:
+    get:
+      summary: Get car by id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: {type: integer}
+      responses:
+        "200":
+          description: OK
+components:
+  schemas:
+    Car:
+      type: object
+      required: [brandId, model, year, price]
+      properties:
+        id: {type: integer, readOnly: true}
+        brandId: {type: integer}
+        model: {type: string}
+        year: {type: integer}
+        price: {type: number}
+        mileage: {type: integer}
+        fuel: {type: string}
+        transmission: {type: string}
+        color: {type: string}
+        images:
+          type: array
+          items: {type: string}
+        vin: {type: string}

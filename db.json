@@ -1,0 +1,153 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "name": "BMW",
+      "country": "Germany"
+    },
+    {
+      "id": 2,
+      "name": "Audi",
+      "country": "Germany"
+    },
+    {
+      "id": 3,
+      "name": "Tesla",
+      "country": "USA"
+    },
+    {
+      "id": 4,
+      "name": "Toyota",
+      "country": "Japan"
+    },
+    {
+      "name": "Audi",
+      "country": "Germany",
+      "id": 5
+    },
+    {
+      "name": "Pego",
+      "country": "France",
+      "id": 6
+    },
+    {
+      "name": "E2E_476W7",
+      "country": "Netherlands",
+      "id": 7
+    },
+    {
+      "name": "E2E_LISNE",
+      "country": "Germany",
+      "id": 8
+    },
+    {
+      "name": "E2E_1CGWY",
+      "country": "Japan",
+      "id": 9
+    },
+    {
+      "name": "E2E_LXCW9",
+      "country": "UK",
+      "id": 10
+    },
+    {
+      "name": "E2E_70LKL",
+      "country": "Spain",
+      "id": 11
+    },
+    {
+      "name": "E2E_5S2CD",
+      "country": "USA",
+      "id": 12
+    },
+    {
+      "name": "E2E_94FZ3",
+      "country": "Germany",
+      "id": 13
+    },
+    {
+      "name": "E2E_YID7H",
+      "country": "Japan",
+      "id": 14
+    },
+    {
+      "name": "E2E_2TH00",
+      "country": "Poland",
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "demo@car.store",
+      "name": "Demo Seller",
+      "role": "seller"
+    },
+    {
+      "id": 2,
+      "email": "buyer@car.store",
+      "name": "Demo Buyer",
+      "role": "buyer"
+    }
+  ],
+  "cars": [
+    {
+      "id": 2,
+      "brandId": 2,
+      "model": "A4",
+      "year": 2019,
+      "price": 24990,
+      "mileage": 60000,
+      "fuel": "diesel",
+      "transmission": "manual",
+      "color": "white",
+      "images": [
+        "https://placehold.co/600x400?text=Audi+A4"
+      ],
+      "vin": "WAUZZZF49JA012345",
+      "createdAt": "2025-01-05T12:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "brandId": 3,
+      "model": "Model 3",
+      "year": 2021,
+      "price": 35990,
+      "mileage": 30000,
+      "fuel": "electric",
+      "transmission": "single-speed",
+      "color": "blue",
+      "images": [
+        "https://placehold.co/600x400?text=Tesla+Model+3"
+      ],
+      "vin": "5YJ3E1EA7MF123456",
+      "createdAt": "2025-02-14T08:45:00.000Z"
+    },
+    {
+      "id": 4,
+      "brandId": 4,
+      "model": "Corolla",
+      "year": 2018,
+      "price": 13990,
+      "mileage": 90000,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "color": "silver",
+      "images": [
+        "https://placehold.co/600x400?text=Toyota+Corolla"
+      ],
+      "vin": "JTDDPRAE1J3012345",
+      "createdAt": "2023-05-20T16:10:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "carId": 2,
+      "buyerId": 2,
+      "status": "pending",
+      "createdAt": "2025-08-01T09:15:00.000Z"
+    }
+  ],
+  "reviews": []
+}

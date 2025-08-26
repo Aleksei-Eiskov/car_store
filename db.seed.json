@@ -1,0 +1,123 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "name": "BMW",
+      "country": "Germany"
+    },
+    {
+      "id": 2,
+      "name": "Audi",
+      "country": "Germany"
+    },
+    {
+      "id": 3,
+      "name": "Tesla",
+      "country": "USA"
+    },
+    {
+      "id": 4,
+      "name": "Toyota",
+      "country": "Japan"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "demo@car.store",
+      "name": "Demo Seller",
+      "role": "seller"
+    },
+    {
+      "id": 2,
+      "email": "buyer@car.store",
+      "name": "Demo Buyer",
+      "role": "buyer"
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "brandId": 1,
+      "model": "3 Series",
+      "year": 2020,
+      "price": 28999,
+      "mileage": 45000,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "color": "black",
+      "images": [
+        "https://placehold.co/600x400?text=BMW+3+Series"
+      ],
+      "vin": "WBA8D9G57JNU12345",
+      "createdAt": "2024-12-10T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "brandId": 2,
+      "model": "A4",
+      "year": 2019,
+      "price": 24990,
+      "mileage": 60000,
+      "fuel": "diesel",
+      "transmission": "manual",
+      "color": "white",
+      "images": [
+        "https://placehold.co/600x400?text=Audi+A4"
+      ],
+      "vin": "WAUZZZF49JA012345",
+      "createdAt": "2025-01-05T12:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "brandId": 3,
+      "model": "Model 3",
+      "year": 2021,
+      "price": 35990,
+      "mileage": 30000,
+      "fuel": "electric",
+      "transmission": "single-speed",
+      "color": "blue",
+      "images": [
+        "https://placehold.co/600x400?text=Tesla+Model+3"
+      ],
+      "vin": "5YJ3E1EA7MF123456",
+      "createdAt": "2025-02-14T08:45:00.000Z"
+    },
+    {
+      "id": 4,
+      "brandId": 4,
+      "model": "Corolla",
+      "year": 2018,
+      "price": 13990,
+      "mileage": 90000,
+      "fuel": "petrol",
+      "transmission": "automatic",
+      "color": "silver",
+      "images": [
+        "https://placehold.co/600x400?text=Toyota+Corolla"
+      ],
+      "vin": "JTDDPRAE1J3012345",
+      "createdAt": "2023-05-20T16:10:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "carId": 2,
+      "buyerId": 2,
+      "status": "pending",
+      "createdAt": "2025-08-01T09:15:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "carId": 1,
+      "userId": 2,
+      "rating": 4,
+      "comment": "Nice car",
+      "createdAt": "2025-02-20T10:00:00.000Z"
+    }
+  ]
+}
